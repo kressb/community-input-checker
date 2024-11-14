@@ -2,7 +2,6 @@ import json
 import streamlit as st
 from openai import OpenAI
 
-# Show title and description.
 st.title("Community Input Checker")
 st.write(
     "Please enter a sentence about what you'd like to see in your neighborhood."
