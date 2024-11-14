@@ -1,0 +1,74 @@
+{
+    "categories": [
+      {
+        "name": "Housing",
+        "typologies": [
+          "Apartments", "Single-Family Homes", "Condos", "Co-ops", "Duplexes", "Townhomes", 
+          "Public Housing", "Assisted Living", "Student Housing", "Temporary Shelters"
+        ]
+      },
+      {
+        "name": "Recreation",
+        "typologies": [
+          "Parks", "Playgrounds", "Sports Fields", "Beaches", 
+          "Hiking Trails", "Skate Parks", "Community Centers", "Swimming Pools"
+        ]
+      },
+      {
+        "name": "Commercial",
+        "typologies": [
+          "Retail Stores", "Supermarkets", "Restaurants", "Bars", 
+          "Shopping Malls", "Office Spaces", "Co-working Spaces", "Boutiques", "Street Food Stands"
+        ]
+      },
+      {
+        "name": "Cultural",
+        "typologies": [
+          "Museums", "Galleries", "Theaters", "Cultural Centers", 
+          "Historical Landmarks", "Libraries", "Performance Venues"
+        ]
+      },
+      {
+        "name": "Health",
+        "typologies": [
+          "Hospitals", "Clinics", "Pharmacies", "Urgent Care Centers", 
+          "Rehabilitation Centers", "Mental Health Facilities", "Health Departments", "Fitness Centers"
+        ]
+      },
+      {
+        "name": "Entertainment",
+        "typologies": [
+          "Movie Theaters", "Concert Venues", "Nightclubs", "Bowling Alleys", 
+          "Amusement Parks", "Arcades", "Comedy Clubs", "Event Spaces"
+        ]
+      },
+      {
+        "name": "Transport",
+        "typologies": [
+          "Bus Stations", "Train Stations", "Bike Lanes", "Pedestrian Walkways", 
+          "Parking Lots", "Rideshare Zones", "Ferry Terminals", "Airport Terminals"
+        ]
+      },
+      {
+        "name": "Civic",
+        "typologies": [
+          "City Halls", "Courthouses", "Police Stations", "Fire Stations", 
+          "Public Libraries", "Post Offices", "Public Meeting Spaces"
+        ]
+      },
+      {
+        "name": "Education",
+        "typologies": [
+          "Elementary Schools", "High Schools", "Colleges", "Universities", 
+          "Vocational Schools", "Preschools", "Tutoring Centers", "Libraries"
+        ]
+      },
+      {
+        "name": "Agriculture",
+        "typologies": [
+          "Farms", "Greenhouses", "Community Gardens", "Farmers' Markets", 
+          "Orchards", "Vineyards", "Urban Farms", "Composting Sites"
+        ]
+      }
+    ]
+  }
