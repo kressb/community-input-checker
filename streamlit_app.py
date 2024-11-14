@@ -2,10 +2,18 @@ import json
 import streamlit as st
 from openai import OpenAI
 
-st.title("Community Input Checker")
-st.write(
-    "Please enter a sentence about what you'd like to see in your neighborhood."
-)
+st.markdown("""
+    <style>
+    .stTextInput, .stTextArea {
+        margin-top: -5%;  /* Set margin-top to 0 to remove space above */
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+st.title("Community Input Categorizer")
+
+st.write("Please enter a sentence about what you'd like to see in your neighborhood.")
+user_input = st.text_input("")
 
 openai_api_key = st.secrets["openai_api_key"]
 client = OpenAI(api_key=openai_api_key)
@@ -15,9 +23,9 @@ with open('data.json', 'r') as f:
 
 json_content_str = json.dumps(json_content)
 
-user_input = st.text_input("Input here:")
 
 if user_input:
+    st.write(f"You entered: *{user_input}*")
     response = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[
