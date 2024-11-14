@@ -16,25 +16,26 @@ with open('data.json', 'r') as f:
 
 json_content_str = json.dumps(json_content)
 
-user_input = input("Please enter your input: ")
+user_input = st.text_input("Input here:")
 
-response = client.chat.completions.create(
-    model="gpt-4o-mini",
-    messages=[
-        {
-            "role": "system",
-            "content": (
-                "You analyze user input into JSON data. The JSON must have these fields: "
-                "category, typology, and keywords (that exist in the input). There could be multiple JSONs for keywords that belong under different categories."
-                "Use only the category and typology values present in the following JSON structure:\n"
-                f"{json_content_str}"
-            )
-        },
-        {
-            "role": "user",
-            "content": user_input
-        }
-    ],
-)
+if user_input:
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            {
+                "role": "system",
+                "content": (
+                    "You analyze user input into JSON data. The JSON must have these fields: "
+                    "category, typology, and keywords (that exist in the input). There could be multiple JSONs for keywords that belong under different categories."
+                    "Use only the category and typology values present in the following JSON structure:\n"
+                    f"{json_content_str}"
+                )
+            },
+            {
+                "role": "user",
+                "content": user_input
+            }
+        ],
+    )
 
-print(response.choices[0].message.content);
+    st.write(response.choices[0].message.content)
