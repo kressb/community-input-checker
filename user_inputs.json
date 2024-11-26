@@ -173,5 +173,37 @@
                 "farm"
             ]
         }
+    },
+    {
+        "date": "2024-11-26 07:26:53",
+        "data": [
+            {
+                "category": "Housing",
+                "typology": "Co-ops",
+                "keywords": [
+                    "co-op",
+                    "housing"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-26 07:27:40",
+        "data": [
+            {
+                "category": "Housing",
+                "typology": "Co-ops",
+                "keywords": [
+                    "co-op housing"
+                ]
+            },
+            {
+                "category": "Transport",
+                "typology": "Bus Stations",
+                "keywords": [
+                    "bus station"
+                ]
+            }
+        ]
     }
 ]

@@ -8,7 +8,6 @@ from collections import defaultdict
 import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
-import numpy as np
 
 def update_frequency_data_by_month(user_inputs, frequency_data):
     for entry in user_inputs:

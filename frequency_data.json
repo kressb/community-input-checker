@@ -4,17 +4,17 @@
             "Commercial": {
                 "typologies": {
                     "Retail Stores": {
-                        "count": 16,
+                        "count": 20,
                         "keywords": {
-                            "record": 8,
-                            "store": 8,
-                            "record store": 8
+                            "record": 10,
+                            "store": 10,
+                            "record store": 10
                         }
                     },
                     "Supermarkets": {
-                        "count": 8,
+                        "count": 10,
                         "keywords": {
-                            "grocery store": 8
+                            "grocery store": 10
                         }
                     }
                 }
@@ -22,16 +22,16 @@
             "Recreation": {
                 "typologies": {
                     "Sports Fields": {
-                        "count": 22,
+                        "count": 28,
                         "keywords": {
-                            "baseball field": 22
+                            "baseball field": 28
                         }
                     },
                     "Parks": {
-                        "count": 5,
+                        "count": 7,
                         "keywords": {
-                            "big": 5,
-                            "park": 5
+                            "big": 7,
+                            "park": 7
                         }
                     }
                 }
@@ -39,10 +39,10 @@
             "Cultural": {
                 "typologies": {
                     "Museums": {
-                        "count": 8,
+                        "count": 10,
                         "keywords": {
-                            "art": 8,
-                            "museum": 8
+                            "art": 10,
+                            "museum": 10
                         }
                     }
                 }
@@ -50,10 +50,10 @@
             "Civic": {
                 "typologies": {
                     "Public Meeting Spaces": {
-                        "count": 7,
+                        "count": 9,
                         "keywords": {
-                            "organize": 7,
-                            "community": 7
+                            "organize": 9,
+                            "community": 9
                         }
                     }
                 }
@@ -61,9 +61,9 @@
             "Entertainment": {
                 "typologies": {
                     "Bowling Alleys": {
-                        "count": 3,
+                        "count": 5,
                         "keywords": {
-                            "bowling alley": 3
+                            "bowling alley": 5
                         }
                     }
                 }
@@ -71,10 +71,10 @@
             "Health": {
                 "typologies": {
                     "Clinics": {
-                        "count": 2,
+                        "count": 4,
                         "keywords": {
-                            "health": 2,
-                            "clinic": 2
+                            "health": 4,
+                            "clinic": 4
                         }
                     }
                 }
@@ -82,10 +82,10 @@
             "Agriculture": {
                 "typologies": {
                     "Community Gardens": {
-                        "count": 1,
+                        "count": 3,
                         "keywords": {
-                            "neighborhood": 1,
-                            "farm": 1
+                            "neighborhood": 3,
+                            "farm": 3
                         }
                     }
                 }
@@ -97,10 +97,10 @@
             "Commercial": {
                 "typologies": {
                     "Retail Stores": {
-                        "count": 5,
+                        "count": 7,
                         "keywords": {
-                            "record": 5,
-                            "store": 5
+                            "record": 7,
+                            "store": 7
                         }
                     }
                 }
