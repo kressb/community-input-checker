@@ -3,6 +3,11 @@ import os
 import streamlit as st
 from openai import OpenAI
 from datetime import datetime
+import csv
+from collections import defaultdict
+import pandas as pd
+import plotly.graph_objects as go
+import streamlit as st
 
 def update_frequency_data_by_month(user_inputs, frequency_data):
     for entry in user_inputs:
@@ -126,8 +131,6 @@ if user_input:
     with open('frequency_data.json', 'w') as f:
         json.dump(frequency_data, f, indent=4)
     
-import csv
-from collections import defaultdict
 
 def update_monthly_csv(frequency_data, filename='monthly_frequency_data.csv'):
     with open(filename, mode='w', newline='') as file:
@@ -142,11 +145,6 @@ def update_monthly_csv(frequency_data, filename='monthly_frequency_data.csv'):
             writer.writerow([date, monthly_counts['Commercial'], monthly_counts['Recreation'], monthly_counts['Cultural'], monthly_counts['Civic']])
 
 update_monthly_csv(frequency_data)
-
-import pandas as pd
-import plotly.graph_objects as go
-import streamlit as st
-
 
 def load_csv(filename='monthly_frequency_data.csv'):
     return pd.read_csv(filename)
