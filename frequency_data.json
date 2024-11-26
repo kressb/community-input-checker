@@ -1,1 +1,78 @@
-{}
+{
+    "2024-11": {
+        "categories": {
+            "Commercial": {
+                "typologies": {
+                    "Retail Stores": {
+                        "count": 10,
+                        "keywords": {
+                            "record": 5,
+                            "store": 5,
+                            "record store": 5
+                        }
+                    },
+                    "Supermarkets": {
+                        "count": 5,
+                        "keywords": {
+                            "grocery store": 5
+                        }
+                    }
+                }
+            },
+            "Recreation": {
+                "typologies": {
+                    "Sports Fields": {
+                        "count": 13,
+                        "keywords": {
+                            "baseball field": 13
+                        }
+                    },
+                    "Parks": {
+                        "count": 2,
+                        "keywords": {
+                            "big": 2,
+                            "park": 2
+                        }
+                    }
+                }
+            },
+            "Cultural": {
+                "typologies": {
+                    "Museums": {
+                        "count": 5,
+                        "keywords": {
+                            "art": 5,
+                            "museum": 5
+                        }
+                    }
+                }
+            },
+            "Civic": {
+                "typologies": {
+                    "Public Meeting Spaces": {
+                        "count": 4,
+                        "keywords": {
+                            "organize": 4,
+                            "community": 4
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "2024-10": {
+        "categories": {
+            "Commercial": {
+                "typologies": {
+                    "Retail Stores": {
+                        "count": 2,
+                        "keywords": {
+                            "record": 2,
+                            "store": 2
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

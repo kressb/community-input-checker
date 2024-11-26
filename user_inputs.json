@@ -1,1 +1,145 @@
-[]
+[
+    {
+        "date": "2024-10-26 04:56:51",
+        "data": {
+            "category": "Commercial",
+            "typology": "Retail Stores",
+            "keywords": [
+                "record",
+                "store"
+            ]
+        }
+    },
+    {
+        "date": "2024-11-26 04:56:51",
+        "data": {
+            "category": "Commercial",
+            "typology": "Retail Stores",
+            "keywords": [
+                "record",
+                "store"
+            ]
+        }
+    },
+    {
+        "date": "2024-11-26 04:57:23",
+        "data": [
+            {
+                "category": "Recreation",
+                "typology": "Parks",
+                "keywords": [
+                    "frog pond"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-26 05:06:23",
+        "data": {
+            "category": "Recreation",
+            "typology": "Sports Fields",
+            "keywords": [
+                "baseball field"
+            ]
+        }
+    },
+    {
+        "date": "2024-11-26 05:17:06",
+        "data": {
+            "category": "Commercial",
+            "typology": "Supermarkets",
+            "keywords": [
+                "grocery store"
+            ]
+        }
+    },
+    {
+        "date": "2024-11-26 05:20:47",
+        "data": [
+            {
+                "category": "Recreation",
+                "typology": "Parks",
+                "keywords": [
+                    "frog pond"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-26 05:28:59",
+        "data": {
+            "category": "Recreation",
+            "typology": "Sports Fields",
+            "keywords": [
+                "baseball field"
+            ]
+        }
+    },
+    {
+        "date": "2024-11-26 05:30:15",
+        "data": {
+            "category": "Cultural",
+            "typology": "Museums",
+            "keywords": [
+                "art",
+                "museum"
+            ]
+        }
+    },
+    {
+        "date": "2024-11-26 05:34:05",
+        "data": {
+            "category": "Commercial",
+            "typology": "Retail Stores",
+            "keywords": [
+                "record store"
+            ]
+        }
+    },
+    {
+        "date": "2024-11-26 05:43:30",
+        "data": {
+            "category": "Civic",
+            "typology": "Public Meeting Spaces",
+            "keywords": [
+                "organize",
+                "community"
+            ]
+        }
+    },
+    {
+        "date": "2024-11-26 06:04:20",
+        "data": {
+            "category": "Recreation",
+            "typology": "Sports Fields",
+            "keywords": [
+                "baseball field"
+            ]
+        }
+    },
+    {
+        "date": "2024-11-26 06:10:17",
+        "data": {
+            "category": "Recreation",
+            "typology": "Parks",
+            "keywords": [
+                "big",
+                "park"
+            ]
+        }
+    },
+    {
+        "date": "2024-11-26 06:11:01",
+        "data": [
+            {
+                "category": "Commercial",
+                "typology": "Bars",
+                "keywords": [
+                    "river",
+                    "themed",
+                    "bar"
+                ]
+            }
+        ]
+    }
+]
