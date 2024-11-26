@@ -4,17 +4,17 @@
             "Commercial": {
                 "typologies": {
                     "Retail Stores": {
-                        "count": 10,
+                        "count": 16,
                         "keywords": {
-                            "record": 5,
-                            "store": 5,
-                            "record store": 5
+                            "record": 8,
+                            "store": 8,
+                            "record store": 8
                         }
                     },
                     "Supermarkets": {
-                        "count": 5,
+                        "count": 8,
                         "keywords": {
-                            "grocery store": 5
+                            "grocery store": 8
                         }
                     }
                 }
@@ -22,16 +22,16 @@
             "Recreation": {
                 "typologies": {
                     "Sports Fields": {
-                        "count": 13,
+                        "count": 22,
                         "keywords": {
-                            "baseball field": 13
+                            "baseball field": 22
                         }
                     },
                     "Parks": {
-                        "count": 2,
+                        "count": 5,
                         "keywords": {
-                            "big": 2,
-                            "park": 2
+                            "big": 5,
+                            "park": 5
                         }
                     }
                 }
@@ -39,10 +39,10 @@
             "Cultural": {
                 "typologies": {
                     "Museums": {
-                        "count": 5,
+                        "count": 8,
                         "keywords": {
-                            "art": 5,
-                            "museum": 5
+                            "art": 8,
+                            "museum": 8
                         }
                     }
                 }
@@ -50,10 +50,42 @@
             "Civic": {
                 "typologies": {
                     "Public Meeting Spaces": {
-                        "count": 4,
+                        "count": 7,
                         "keywords": {
-                            "organize": 4,
-                            "community": 4
+                            "organize": 7,
+                            "community": 7
+                        }
+                    }
+                }
+            },
+            "Entertainment": {
+                "typologies": {
+                    "Bowling Alleys": {
+                        "count": 3,
+                        "keywords": {
+                            "bowling alley": 3
+                        }
+                    }
+                }
+            },
+            "Health": {
+                "typologies": {
+                    "Clinics": {
+                        "count": 2,
+                        "keywords": {
+                            "health": 2,
+                            "clinic": 2
+                        }
+                    }
+                }
+            },
+            "Agriculture": {
+                "typologies": {
+                    "Community Gardens": {
+                        "count": 1,
+                        "keywords": {
+                            "neighborhood": 1,
+                            "farm": 1
                         }
                     }
                 }
@@ -65,10 +97,10 @@
             "Commercial": {
                 "typologies": {
                     "Retail Stores": {
-                        "count": 2,
+                        "count": 5,
                         "keywords": {
-                            "record": 2,
-                            "store": 2
+                            "record": 5,
+                            "store": 5
                         }
                     }
                 }

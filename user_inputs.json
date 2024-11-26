@@ -141,5 +141,37 @@
                 ]
             }
         ]
+    },
+    {
+        "date": "2024-11-26 07:23:09",
+        "data": {
+            "category": "Entertainment",
+            "typology": "Bowling Alleys",
+            "keywords": [
+                "bowling alley"
+            ]
+        }
+    },
+    {
+        "date": "2024-11-26 07:23:23",
+        "data": {
+            "category": "Health",
+            "typology": "Clinics",
+            "keywords": [
+                "health",
+                "clinic"
+            ]
+        }
+    },
+    {
+        "date": "2024-11-26 07:23:32",
+        "data": {
+            "category": "Agriculture",
+            "typology": "Community Gardens",
+            "keywords": [
+                "neighborhood",
+                "farm"
+            ]
+        }
     }
 ]

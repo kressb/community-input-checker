@@ -8,6 +8,7 @@ from collections import defaultdict
 import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
+import numpy as np
 
 def update_frequency_data_by_month(user_inputs, frequency_data):
     for entry in user_inputs:
@@ -132,57 +133,74 @@ if user_input:
         json.dump(frequency_data, f, indent=4)
     
 
-def update_monthly_csv(frequency_data, filename='monthly_frequency_data.csv'):
-    with open(filename, mode='w', newline='') as file:
-        writer = csv.writer(file)
-        # header
-        writer.writerow(['Date', 'Commercial', 'Recreation', 'Cultural', 'Civic', 'Housing', 'Health', 'Entertainment', 'Transport', 'Education', 'Agriculture'])
-        for date, date_data in frequency_data.items():
-            monthly_counts = defaultdict(int)
-            for category, category_data in date_data['categories'].items():
-                total_count = sum(typology_data['count'] for typology_data in category_data['typologies'].values())
-                monthly_counts[category] = total_count
-            writer.writerow([date, monthly_counts['Commercial'], monthly_counts['Recreation'], monthly_counts['Cultural'], monthly_counts['Civic']])
+# def update_monthly_csv(frequency_data, filename='monthly_frequency_data.csv'):
+#     with open(filename, mode='w', newline='') as file:
+#         writer = csv.writer(file)
+#         # header
+#         writer.writerow(['Date', 'Commercial', 'Recreation', 'Cultural', 'Civic', 'Housing', 'Health', 'Entertainment', 'Transport', 'Education', 'Agriculture'])
+#         for date, date_data in frequency_data.items():
+#             monthly_counts = defaultdict(int)
+#             for category, category_data in date_data['categories'].items():
+#                 total_count = sum(typology_data['count'] for typology_data in category_data['typologies'].values())
+#                 monthly_counts[category] = total_count
+#             writer.writerow([date, monthly_counts['Commercial'], monthly_counts['Recreation'], monthly_counts['Cultural'], monthly_counts['Civic']])
 
-update_monthly_csv(frequency_data)
+# update_monthly_csv(frequency_data)
 
-def load_csv(filename='monthly_frequency_data.csv'):
-    return pd.read_csv(filename)
+# def load_csv(filename='monthly_frequency_data.csv'):
+#     return pd.read_csv(filename)
 
-df = load_csv()
+# df = load_csv()
 
-categories = ['Commercial', 'Recreation', 'Cultural', 'Civic', 'Housing', 'Health', 'Entertainment', 'Transport', 'Education', 'Agriculture']
-dates = df['Date'].tolist()
+data_rows = []
+for date, date_info in frequency_data.items():
+    for category, category_info in date_info["categories"].items():
+        total_count = 0
+        for typology, typology_info in category_info.get("typologies", {}).items():
+            count = typology_info.get("count", 0)
+            total_count += count
+        # Append row for the category
+        data_rows.append({"date": date, "category": category, "count": total_count})
 
-data = {
-    category: df[category].tolist() for category in categories
-}
+# Create DataFrame
+df = pd.DataFrame(data_rows)
 
-fig = go.Figure()
+df.to_csv("category_trends.csv", index=False)
 
-for category, counts in data.items():
-    fig.add_trace(go.Scatter(
-        x=dates, 
-        y=counts, 
-        mode='lines',
-        stackgroup='one',  # This groups the lines into a single stack
-        name=category
-    ))
+st.area_chart(df, x="date", y="count", color="category", stack="center")
 
-fig.update_layout(
-    title='communityDIAL',
-    xaxis_title='Date',
-    yaxis_title='Count',
-    template='plotly_dark',  
-    xaxis=dict(
-        tickmode='array',
-        tickvals=dates,
-        tickangle=45  
-    ),
-    yaxis=dict(
-        rangemode="tozero" 
-    ),
-    showlegend=True
-)
+# categories = ['Commercial', 'Recreation', 'Cultural', 'Civic', 'Housing', 'Health', 'Entertainment', 'Transport', 'Education', 'Agriculture']
+# dates = df['Date'].tolist()
 
-st.plotly_chart(fig)
+# data = {
+#     category: df[category].tolist() for category in categories
+# }
+
+# fig = go.Figure()
+
+# for category, counts in data.items():
+#     fig.add_trace(go.Scatter(
+#         x=dates, 
+#         y=counts, 
+#         mode='lines',
+#         stackgroup='one',  # This groups the lines into a single stack
+#         name=category
+#     ))
+
+# fig.update_layout(
+#     title='communityDIAL',
+#     xaxis_title='Date',
+#     yaxis_title='Count',
+#     template='plotly_dark',  
+#     xaxis=dict(
+#         tickmode='array',
+#         tickvals=dates,
+#         tickangle=45  
+#     ),
+#     yaxis=dict(
+#         rangemode="tozero" 
+#     ),
+#     showlegend=True
+# )
+
+# st.plotly_chart(fig)
