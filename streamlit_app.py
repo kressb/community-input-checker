@@ -1,6 +1,26 @@
 import json
+import os
 import streamlit as st
 from openai import OpenAI
+
+with open('data.json', 'r') as f:
+    json_content = json.load(f)
+
+# Initialize or load user inputs
+if os.path.exists('user_inputs.json'):
+    with open('user_inputs.json', 'r') as f:
+        user_inputs = json.load(f)
+else:
+    user_inputs = []
+
+# Initialize or load frequency data
+if os.path.exists('frequency_data.json'):
+    with open('frequency_data.json', 'r') as f:
+        frequency_data = json.load(f)
+else:
+    frequency_data = {}
+
+
 
 st.markdown("""
     <style>
@@ -45,4 +65,10 @@ if user_input:
         ],
     )
 
-    st.write(response.choices[0].message.content)
+    # st.write(response.choices[0].message.content)
+    response_json = json.loads(response.choices[0].message.content)
+    st.write(response_json)
+
+    user_inputs.append(response_json)
+    with open('user_inputs.json', 'w') as f:
+        json.dump(user_inputs, f, indent=4)
