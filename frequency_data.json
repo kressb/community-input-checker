@@ -4,24 +4,24 @@
             "Commercial": {
                 "typologies": {
                     "Retail Stores": {
-                        "count": 88,
+                        "count": 94,
                         "keywords": {
-                            "record": 44,
-                            "store": 44,
-                            "record store": 44
+                            "record": 47,
+                            "store": 47,
+                            "record store": 47
                         }
                     },
                     "Supermarkets": {
-                        "count": 44,
+                        "count": 47,
                         "keywords": {
-                            "grocery store": 44
+                            "grocery store": 47
                         }
                     },
                     "Street Food Stands": {
-                        "count": 25,
+                        "count": 28,
                         "keywords": {
-                            "food truck": 25,
-                            "park": 25
+                            "food truck": 28,
+                            "park": 28
                         }
                     }
                 }
@@ -29,19 +29,19 @@
             "Recreation": {
                 "typologies": {
                     "Sports Fields": {
-                        "count": 130,
+                        "count": 139,
                         "keywords": {
-                            "baseball field": 130
+                            "baseball field": 139
                         }
                     },
                     "Parks": {
-                        "count": 69,
+                        "count": 75,
                         "keywords": {
-                            "big": 41,
-                            "park": 41,
-                            "neighborhood": 28,
-                            "parks": 28,
-                            "see": 28
+                            "big": 44,
+                            "park": 44,
+                            "neighborhood": 31,
+                            "parks": 31,
+                            "see": 31
                         }
                     }
                 }
@@ -49,10 +49,10 @@
             "Cultural": {
                 "typologies": {
                     "Museums": {
-                        "count": 44,
+                        "count": 47,
                         "keywords": {
-                            "art": 44,
-                            "museum": 44
+                            "art": 47,
+                            "museum": 47
                         }
                     }
                 }
@@ -60,10 +60,10 @@
             "Civic": {
                 "typologies": {
                     "Public Meeting Spaces": {
-                        "count": 43,
+                        "count": 46,
                         "keywords": {
-                            "organize": 43,
-                            "community": 43
+                            "organize": 46,
+                            "community": 46
                         }
                     }
                 }
@@ -71,9 +71,9 @@
             "Entertainment": {
                 "typologies": {
                     "Bowling Alleys": {
-                        "count": 39,
+                        "count": 42,
                         "keywords": {
-                            "bowling alley": 39
+                            "bowling alley": 42
                         }
                     }
                 }
@@ -81,11 +81,11 @@
             "Health": {
                 "typologies": {
                     "Clinics": {
-                        "count": 67,
+                        "count": 73,
                         "keywords": {
-                            "health": 38,
-                            "clinic": 38,
-                            "planned parenthood": 29
+                            "health": 41,
+                            "clinic": 41,
+                            "planned parenthood": 32
                         }
                     }
                 }
@@ -93,10 +93,10 @@
             "Agriculture": {
                 "typologies": {
                     "Community Gardens": {
-                        "count": 37,
+                        "count": 40,
                         "keywords": {
-                            "neighborhood": 37,
-                            "farm": 37
+                            "neighborhood": 40,
+                            "farm": 40
                         }
                     }
                 }
@@ -108,10 +108,10 @@
             "Commercial": {
                 "typologies": {
                     "Retail Stores": {
-                        "count": 41,
+                        "count": 44,
                         "keywords": {
-                            "record": 41,
-                            "store": 41
+                            "record": 44,
+                            "store": 44
                         }
                     }
                 }

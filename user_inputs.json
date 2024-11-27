@@ -662,5 +662,66 @@
                 ]
             }
         ]
+    },
+    {
+        "date": "2024-11-27 04:46:38",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "streets"
+                ]
+            },
+            {
+                "category": "Civic",
+                "typology": "Public Meeting Spaces",
+                "keywords": [
+                    "safe",
+                    "streets"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 04:47:50",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "streets"
+                ]
+            },
+            {
+                "category": "Civic",
+                "typology": "Public Meeting Spaces",
+                "keywords": [
+                    "safe",
+                    "streets"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 04:48:08",
+        "data": [
+            {
+                "category": "Recreation",
+                "typology": "Parks",
+                "keywords": [
+                    "frog pond"
+                ]
+            },
+            {
+                "category": "Commercial",
+                "typology": "Retail Stores",
+                "keywords": [
+                    "record store"
+                ]
+            }
+        ]
     }
 ]

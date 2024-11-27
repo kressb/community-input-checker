@@ -140,6 +140,10 @@ if user_input:
     selected_category = clean[0]["category"]
     selected_typology = clean[0]["typology"]
 
+    if len(clean) > 1:
+        selected_category2 = clean[1]["category"]
+        selected_typology2 = clean[1]["typology"]
+
     col1, col2 = st.columns([2,6])
 
     with col1:
@@ -150,7 +154,7 @@ if user_input:
         rows = len(categories) // 5 + len(categories) % 2  # Calculate rows for a 5x2 grid
 
         for i in range(rows):
-            row = st.columns(5)  # Create a row with five columns
+            row = st.columns(5)  
             
             # Handle two categories per row
             for j in range(5):
@@ -161,10 +165,10 @@ if user_input:
                     typologies = category_data["typologies"]
 
                     # Highlight logic
-                    if category_name == selected_category:
+                    if category_name == selected_category or category_name == selected_category2:
                         category_style = f"<span style='background-color: blue; color: white; padding: 5px;'>{category_name}</span>"
                         typologies_style = "\n".join(
-                        [f"<span style='color: blue; font-weight: bold;'>{t}</span>" if t == selected_typology else f"<span style='color: gray;'>{t}</span>"
+                        [f"<span style='color: blue; font-weight: bold;'>{t}</span>" if t == selected_typology or t == selected_typology2 else f"<span style='color: gray;'>{t}</span>"
                         for t in typologies]
                         )
                     else:
