@@ -205,5 +205,406 @@
                 ]
             }
         ]
+    },
+    {
+        "date": "2024-11-26 20:35:06",
+        "data": [
+            {
+                "category": "Recreation",
+                "typology": "Sports Fields",
+                "keywords": [
+                    "baseball field"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-26 22:23:10",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Bus Stations",
+                "keywords": [
+                    "bus stop"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-26 22:25:16",
+        "data": [
+            {
+                "category": "Civic",
+                "typology": "Public Meeting Spaces",
+                "keywords": [
+                    "trash cans"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-26 22:25:36",
+        "data": [
+            {
+                "category": "Civic",
+                "typology": "Public Meeting Spaces",
+                "keywords": [
+                    "trashcans"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-26 23:05:25",
+        "data": [
+            {
+                "category": "Recreation",
+                "typology": "Parks",
+                "keywords": [
+                    "picnic tables"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-26 23:06:59",
+        "data": {
+            "category": "Health",
+            "typology": "Clinics",
+            "keywords": [
+                "planned parenthood"
+            ]
+        }
+    },
+    {
+        "date": "2024-11-27 00:21:03",
+        "data": {
+            "category": "Recreation",
+            "typology": "Parks",
+            "keywords": [
+                "neighborhood",
+                "parks",
+                "see"
+            ]
+        }
+    },
+    {
+        "date": "2024-11-27 00:25:11",
+        "data": [
+            {
+                "category": "Agriculture",
+                "typology": "Community Gardens",
+                "keywords": [
+                    "garden"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 02:02:07",
+        "data": [
+            {
+                "category": "Commercial",
+                "typology": "Street Food Stands",
+                "keywords": [
+                    "food truck park"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 02:04:04",
+        "data": {
+            "category": "Commercial",
+            "typology": "Street Food Stands",
+            "keywords": [
+                "food truck",
+                "park"
+            ]
+        }
+    },
+    {
+        "date": "2024-11-27 02:12:15",
+        "data": [
+            {
+                "category": "Cultural",
+                "typology": "Performance Venues",
+                "keywords": [
+                    "ballet studio"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 02:14:58",
+        "data": [
+            {
+                "category": "Recreation",
+                "typology": "Swimming Pools",
+                "keywords": [
+                    "pool"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 02:16:42",
+        "data": [
+            {
+                "category": "Civic",
+                "typology": "Public Meeting Spaces",
+                "keywords": [
+                    "plaza"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 03:43:57",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "streets"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 03:47:00",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "safe streets"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 03:52:11",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "safe",
+                    "streets"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 03:53:04",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "safe"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 03:57:12",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "streets"
+                ]
+            },
+            {
+                "category": "Civic",
+                "typology": "Public Meeting Spaces",
+                "keywords": [
+                    "safe",
+                    "streets"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 03:57:59",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "safe streets"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 04:00:10",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "safe streets"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 04:00:58",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "safe",
+                    "streets"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 04:01:49",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "safe streets"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 04:03:58",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "safe",
+                    "streets"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 04:04:31",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "safe"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 04:05:52",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "safe streets"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 04:06:18",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "streets"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 04:07:15",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "safe",
+                    "streets"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 04:07:49",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "safe",
+                    "streets"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 04:08:24",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "streets"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 04:10:30",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "safe",
+                    "streets"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 04:14:43",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "safe streets"
+                ]
+            }
+        ]
     }
 ]

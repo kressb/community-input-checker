@@ -66,18 +66,42 @@ else:
     frequency_data = {}
 
 
-st.markdown("""
-    <style>
-    .stTextInput, .stTextArea {
-        margin-top: -5%;  /* Set margin-top to 0 to remove space above */
-    }
-    </style>
-""", unsafe_allow_html=True)
+# st.markdown("""
+#     <style>
+#     .stTextInput, .stTextArea {
+#         margin-top: -5%;  /* Set margin-top to 0 to remove space above */
+#     }
+#     </style>
+# """, unsafe_allow_html=True)
 
-st.title("welcome to communityDIAL")
+st.title("Welcome to CommunityDIAL")
 
 st.write("Please enter a sentence about what you'd like to see in your neighborhood.")
-user_input = st.text_input("")
+
+with st.form('chat_input_form'):
+    # Create two columns; adjust the ratio to your liking
+    col1, col2 = st.columns([7,1]) 
+
+    # Use the first column for text input
+    with col1:
+        user_input = st.text_input(
+            "",
+            label_visibility='collapsed'
+        )
+    # Use the second column for the submit button
+    with col2:
+        submitted = st.form_submit_button('Submit')
+
+
+hide_input_instructions_css = """
+<style>
+div[data-testid="InputInstructions"] > span:nth-child(1) {
+    visibility: hidden;
+}
+</style>
+"""
+
+st.markdown(hide_input_instructions_css, unsafe_allow_html=True)
 
 openai_api_key = st.secrets["openai_api_key"]
 client = OpenAI(api_key=openai_api_key)
@@ -110,9 +134,66 @@ if user_input:
     )
 
     response_json = response.choices[0].message.content
-    st.write(response_json)
-
     clean_response = response_json.strip("```json\n").strip("```").strip()
+    clean = json.loads(clean_response)
+
+    selected_category = clean[0]["category"]
+    selected_typology = clean[0]["typology"]
+
+    col1, col2 = st.columns([2,6])
+
+    with col1:
+        st.write(response_json)
+
+    with col2:
+        categories = json_content["categories"]
+        rows = len(categories) // 5 + len(categories) % 2  # Calculate rows for a 5x2 grid
+
+        for i in range(rows):
+            row = st.columns(5)  # Create a row with five columns
+            
+            # Handle two categories per row
+            for j in range(5):
+                idx = i * 5 + j
+                if idx < len(categories):
+                    category_data = categories[idx]
+                    category_name = category_data["name"]
+                    typologies = category_data["typologies"]
+
+                    # Highlight logic
+                    if category_name == selected_category:
+                        category_style = f"<span style='background-color: blue; color: white; padding: 5px;'>{category_name}</span>"
+                        typologies_style = "\n".join(
+                        [f"<span style='color: blue; font-weight: bold;'>{t}</span>" if t == selected_typology else f"<span style='color: gray;'>{t}</span>"
+                        for t in typologies]
+                        )
+                    else:
+                        category_style = f"<span style='color:gray;'>{category_name}</span>"
+                        typologies_style = "\n".join([f"<span style='color:gray;'>{t}</span>" for t in typologies])
+
+                    # Render in the grid
+                    with row[j]:
+                        st.markdown(f"<h5>{category_style}</h5>", unsafe_allow_html=True)
+                        st.markdown(f"<p>{typologies_style}</p>", unsafe_allow_html=True)
+
+# col1, col2 = st.columns([2,9])
+
+# with col1:
+#     st.write("hello")
+
+# with col2:
+#     row1 = st.columns(5)
+#     row2 = st.columns(5)
+
+#     for col in row1 + row2:
+#         tile = col.container(border=True)
+#         tile.subheader("Category")
+#         multi = '''ndfnkf
+#         nfdjncsdncjf
+#         '''
+#         tile.markdown(multi)
+
+    
 
     # st.write(f"Cleaned API response: {clean_response}")
 
@@ -151,22 +232,22 @@ if user_input:
 
 # df = load_csv()
 
-data_rows = []
-for date, date_info in frequency_data.items():
-    for category, category_info in date_info["categories"].items():
-        total_count = 0
-        for typology, typology_info in category_info.get("typologies", {}).items():
-            count = typology_info.get("count", 0)
-            total_count += count
-        # Append row for the category
-        data_rows.append({"date": date, "category": category, "count": total_count})
+# data_rows = []
+# for date, date_info in frequency_data.items():
+#     for category, category_info in date_info["categories"].items():
+#         total_count = 0
+#         for typology, typology_info in category_info.get("typologies", {}).items():
+#             count = typology_info.get("count", 0)
+#             total_count += count
+#         # Append row for the category
+#         data_rows.append({"date": date, "category": category, "count": total_count})
 
-# Create DataFrame
-df = pd.DataFrame(data_rows)
+# # Create DataFrame
+# df = pd.DataFrame(data_rows)
 
-df.to_csv("category_trends.csv", index=False)
+# df.to_csv("category_trends.csv", index=False)
 
-st.area_chart(df, x="date", y="count", color="category", stack="center")
+# st.area_chart(df, x="date", y="count", color="category", stack="center")
 
 # categories = ['Commercial', 'Recreation', 'Cultural', 'Civic', 'Housing', 'Health', 'Entertainment', 'Transport', 'Education', 'Agriculture']
 # dates = df['Date'].tolist()
