@@ -606,5 +606,61 @@
                 ]
             }
         ]
+    },
+    {
+        "date": "2024-11-27 04:19:29",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "streets"
+                ]
+            },
+            {
+                "category": "Civic",
+                "typology": "Public Meeting Spaces",
+                "keywords": [
+                    "safe",
+                    "streets"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 04:20:41",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "streets"
+                ]
+            },
+            {
+                "category": "Civic",
+                "typology": "Public Meeting Spaces",
+                "keywords": [
+                    "safe",
+                    "streets"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-11-27 04:22:30",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Pedestrian Walkways",
+                "keywords": [
+                    "walkable",
+                    "safe",
+                    "streets"
+                ]
+            }
+        ]
     }
 ]
