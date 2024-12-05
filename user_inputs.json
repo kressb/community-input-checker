@@ -723,5 +723,442 @@
                 ]
             }
         ]
+    },
+    {
+        "date": "2024-11-27 04:51:36",
+        "data": [
+            {
+                "category": "Recreation",
+                "typology": "Sports Fields",
+                "keywords": [
+                    "baseball field"
+                ]
+            },
+            {
+                "category": "Commercial",
+                "typology": "Street Food Stands",
+                "keywords": [
+                    "hot dog stand"
+                ]
+            }
+        ]
+    },
+    {
+        "date": "2024-12-05 05:55:17",
+        "data": {
+            "category": "Civic",
+            "typology": "Public Meeting Spaces",
+            "keywords": [
+                "organize",
+                "community"
+            ],
+            "raw_text": "a place to organize the community"
+        }
+    },
+    {
+        "date": "2024-12-05 05:55:21",
+        "data": {
+            "category": "Civic",
+            "typology": "Public Meeting Spaces",
+            "keywords": [
+                "organize",
+                "community"
+            ],
+            "raw_text": "a place to organize the community"
+        }
+    },
+    {
+        "date": "2024-12-05 05:55:27",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Bus Stations",
+                "keywords": [
+                    "new",
+                    "bus",
+                    "stop"
+                ],
+                "raw_text": "a new bus stop"
+            }
+        ]
+    },
+    {
+        "date": "2024-12-05 05:56:00",
+        "data": [
+            {
+                "category": "Agriculture",
+                "typology": "Community Gardens",
+                "keywords": [
+                    "garden"
+                ],
+                "raw_text": "a garden"
+            }
+        ]
+    },
+    {
+        "date": "2024-12-05 05:57:40",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Bus Stations",
+                "keywords": [
+                    "bus",
+                    "stop"
+                ],
+                "raw_text": "a new bus stop"
+            }
+        ]
+    },
+    {
+        "date": "2024-12-05 05:59:12",
+        "data": {
+            "category": "Transport",
+            "typology": "Bus Stations",
+            "keywords": [
+                "bus",
+                "stop"
+            ],
+            "raw_text": "a new bus stop"
+        }
+    },
+    {
+        "date": "2024-12-05 05:59:51",
+        "data": {
+            "category": "Transport",
+            "typology": "Bus Stations",
+            "keywords": [
+                "bus",
+                "stop"
+            ],
+            "raw_text": "a new bus stop"
+        }
+    },
+    {
+        "date": "2024-12-05 05:59:54",
+        "data": {
+            "category": "Transport",
+            "typology": "Bus Stations",
+            "keywords": [
+                "bus",
+                "stop"
+            ],
+            "raw_text": "a new bus stop"
+        }
+    },
+    {
+        "date": "2024-12-05 06:05:49",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Bus Stations",
+                "keywords": [
+                    "bus",
+                    "stop"
+                ],
+                "raw_text": "a new bus stop"
+            }
+        ]
+    },
+    {
+        "date": "2024-12-05 06:06:02",
+        "data": [
+            {
+                "category": "Transport",
+                "typology": "Bus Stations",
+                "keywords": [
+                    "bus",
+                    "stop"
+                ],
+                "raw_text": "a new bus stop"
+            }
+        ]
+    },
+    {
+        "date": "2024-12-05 06:06:34",
+        "data": [
+            {
+                "category": "Recreation",
+                "typology": "Parks",
+                "keywords": [
+                    "frog pond"
+                ],
+                "raw_text": "baseball, frog pond, dining, apple"
+            },
+            {
+                "category": "Commercial",
+                "typology": "Restaurants",
+                "keywords": [
+                    "dining"
+                ],
+                "raw_text": "baseball, frog pond, dining, apple"
+            }
+        ]
+    },
+    {
+        "date": "2024-12-05 06:12:34",
+        "data": [
+            {
+                "category": "Agriculture",
+                "typology": "Community Gardens",
+                "keywords": [
+                    "garden"
+                ],
+                "raw_text": "a garden and a zoo and a library"
+            },
+            {
+                "category": "Cultural",
+                "typology": "Libraries",
+                "keywords": [
+                    "library"
+                ],
+                "raw_text": "a garden and a zoo and a library"
+            },
+            {
+                "category": "Recreation",
+                "typology": "Parks",
+                "keywords": [
+                    "zoo"
+                ],
+                "raw_text": "a garden and a zoo and a library"
+            }
+        ]
+    },
+    {
+        "date": "2024-12-05 06:24:29",
+        "data": [
+            {
+                "category": "Agriculture",
+                "typology": "Community Gardens",
+                "keywords": [
+                    "garden"
+                ],
+                "raw_text": "a garden"
+            }
+        ]
+    },
+    {
+        "date": "2024-12-05 06:26:47",
+        "data": [
+            {
+                "category": "Agriculture",
+                "typology": "Community Gardens",
+                "keywords": [
+                    "garden"
+                ],
+                "raw_text": "a garden"
+            }
+        ]
+    },
+    {
+        "date": "2024-12-05 06:28:05",
+        "data": [
+            {
+                "category": "Recreation",
+                "typology": "Sports Fields",
+                "keywords": [
+                    "baseball field",
+                    "hot dog stand"
+                ],
+                "raw_text": "baseball field with hot dog stand"
+            },
+            {
+                "category": "Commercial",
+                "typology": "Street Food Stands",
+                "keywords": [
+                    "hot dog stand"
+                ],
+                "raw_text": "baseball field with hot dog stand"
+            }
+        ]
+    },
+    {
+        "date": "2024-12-05 06:30:52",
+        "data": {
+            "category": "Transport",
+            "typology": "Bus Stations",
+            "keywords": [
+                "bus",
+                "stop"
+            ],
+            "raw_text": "a new bus stop"
+        }
+    },
+    {
+        "date": "2024-12-05 06:34:29",
+        "data": [
+            {
+                "category": "Agriculture",
+                "typology": "Community Gardens",
+                "keywords": [
+                    "garden"
+                ],
+                "raw_text": "a garden"
+            }
+        ]
+    },
+    {
+        "date": "2024-12-05 06:38:17",
+        "data": {
+            "category": "Transport",
+            "typology": "Bus Stations",
+            "keywords": [
+                "bus",
+                "stop"
+            ],
+            "raw_text": "a new bus stop"
+        }
+    },
+    {
+        "date": "2024-12-05 06:38:32",
+        "data": [
+            {
+                "category": "Agriculture",
+                "typology": "Community Gardens",
+                "keywords": [
+                    "garden"
+                ],
+                "raw_text": "a garden and a soup truck and a record store"
+            },
+            {
+                "category": "Commercial",
+                "typology": "Food Trucks",
+                "keywords": [
+                    "soup truck"
+                ],
+                "raw_text": "a garden and a soup truck and a record store"
+            },
+            {
+                "category": "Commercial",
+                "typology": "Retail Stores",
+                "keywords": [
+                    "record store"
+                ],
+                "raw_text": "a garden and a soup truck and a record store"
+            }
+        ]
+    },
+    {
+        "date": "2024-12-05 06:40:51",
+        "data": [
+            {
+                "category": "Commercial",
+                "typology": "Retail Stores",
+                "keywords": [
+                    "record store"
+                ],
+                "raw_text": "a record store and a park and a library"
+            },
+            {
+                "category": "Recreation",
+                "typology": "Parks",
+                "keywords": [
+                    "park"
+                ],
+                "raw_text": "a record store and a park and a library"
+            },
+            {
+                "category": "Civic",
+                "typology": "Public Libraries",
+                "keywords": [
+                    "library"
+                ],
+                "raw_text": "a record store and a park and a library"
+            }
+        ]
+    },
+    {
+        "date": "2024-12-05 06:42:02",
+        "data": [
+            {
+                "category": "Commercial",
+                "typology": "Retail Stores",
+                "keywords": [
+                    "record store"
+                ],
+                "raw_text": "a record store and a park and a library"
+            },
+            {
+                "category": "Recreation",
+                "typology": "Parks",
+                "keywords": [
+                    "park"
+                ],
+                "raw_text": "a record store and a park and a library"
+            },
+            {
+                "category": "Civic",
+                "typology": "Public Libraries",
+                "keywords": [
+                    "library"
+                ],
+                "raw_text": "a record store and a park and a library"
+            }
+        ]
+    },
+    {
+        "date": "2024-12-05 06:42:54",
+        "data": [
+            {
+                "category": "Commercial",
+                "typology": "Retail Stores",
+                "keywords": [
+                    "record store"
+                ],
+                "raw_text": "a record store and a park and a library"
+            },
+            {
+                "category": "Recreation",
+                "typology": "Parks",
+                "keywords": [
+                    "park"
+                ],
+                "raw_text": "a record store and a park and a library"
+            },
+            {
+                "category": "Civic",
+                "typology": "Public Libraries",
+                "keywords": [
+                    "library"
+                ],
+                "raw_text": "a record store and a park and a library"
+            }
+        ]
+    },
+    {
+        "date": "2024-12-05 06:45:27",
+        "data": [
+            {
+                "category": "Civic",
+                "typology": "Public Libraries",
+                "keywords": [
+                    "library"
+                ],
+                "raw_text": "a library and a bus stop and a record store and a garden"
+            },
+            {
+                "category": "Transport",
+                "typology": "Bus Stations",
+                "keywords": [
+                    "bus stop"
+                ],
+                "raw_text": "a library and a bus stop and a record store and a garden"
+            },
+            {
+                "category": "Commercial",
+                "typology": "Retail Stores",
+                "keywords": [
+                    "record store"
+                ],
+                "raw_text": "a library and a bus stop and a record store and a garden"
+            },
+            {
+                "category": "Agriculture",
+                "typology": "Community Gardens",
+                "keywords": [
+                    "garden"
+                ],
+                "raw_text": "a library and a bus stop and a record store and a garden"
+            }
+        ]
     }
 ]

@@ -6,7 +6,6 @@ from datetime import datetime
 import csv
 from collections import defaultdict
 import pandas as pd
-import plotly.graph_objects as go
 import streamlit as st
 
 def update_frequency_data_by_month(user_inputs, frequency_data):
@@ -78,6 +77,18 @@ st.title("Welcome to CommunityDIAL")
 
 st.write("Please enter a sentence about what you'd like to see in your neighborhood.")
 
+category_colors = {
+    "Housing": "#9E0142",  
+    "Recreation": "#ABDDA4", 
+    "Commercial": "#7D4872",
+    "Cultural": "#A07791",
+    "Health": "#D53E4F",
+    "Entertainment": "#F46D43",
+    "Transport": "#568BC7",
+    "Civic": "#398D8C",
+    "Education": "#59B0B8",  
+    "Agriculture": "#FDAE61"  
+}
 with st.form('chat_input_form'):
     # Create two columns; adjust the ratio to your liking
     col1, col2 = st.columns([7,1]) 
@@ -113,7 +124,6 @@ json_content_str = json.dumps(json_content)
 
 
 if user_input:
-    st.write(f"You entered: *{user_input}*")
     response = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[
@@ -121,7 +131,7 @@ if user_input:
                 "role": "system",
                 "content": (
                     "You analyze user input into JSON data. The JSON must have these fields: "
-                    "category, typology, and keywords (that exist in the input). There could be multiple JSONs for keywords that belong under different categories."
+                    "category, typology, and keywords (that exist in the input), as well as the raw text that was recieved. There could be multiple JSONs for keywords that belong under different categories. Give your best guess."
                     "Use only the category and typology values present in the following JSON structure:\n"
                     f"{json_content_str}"
                 )
@@ -135,50 +145,122 @@ if user_input:
 
     response_json = response.choices[0].message.content
     clean_response = response_json.strip("```json\n").strip("```").strip()
-    clean = json.loads(clean_response)
+    parsed_responses = json.loads(clean_response)
+    
+    if not isinstance(parsed_responses, list):  # Ensure response is a list
+        parsed_responses = [parsed_responses]
 
-    selected_category = clean[0]["category"]
-    selected_typology = clean[0]["typology"]
 
-    if len(clean) > 1:
-        selected_category2 = clean[1]["category"]
-        selected_typology2 = clean[1]["typology"]
-
-    col1, col2 = st.columns([2,6])
+    # Create columns to highlight categories and typologies
+    col1, col2 = st.columns([4, 6])
 
     with col1:
         st.write(response_json)
 
     with col2:
         categories = json_content["categories"]
-        rows = len(categories) // 5 + len(categories) % 2  # Calculate rows for a 5x2 grid
+        rows = len(categories) // 5 + (len(categories) % 5 > 0)  # Calculate rows for a 5-column grid
 
         for i in range(rows):
-            row = st.columns(5)  
-            
-            # Handle two categories per row
+            row = st.columns(5)  # Create 5 columns per row
+
             for j in range(5):
                 idx = i * 5 + j
                 if idx < len(categories):
                     category_data = categories[idx]
                     category_name = category_data["name"]
                     typologies = category_data["typologies"]
+                    category_color = category_colors.get(category_name, "#000000")
+
+                    # Check if any response matches this category/typology
+                    category_highlight = False
+                    typology_highlights = []
+
+                    for response_obj in parsed_responses:
+                        if response_obj.get("category") == category_name:
+                            category_highlight = True
+                        typology_highlights.extend(
+                            t for t in typologies if t == response_obj.get("typology")
+                        )
 
                     # Highlight logic
-                    if category_name == selected_category or category_name == selected_category2:
-                        category_style = f"<span style='background-color: blue; color: white; padding: 5px;'>{category_name}</span>"
-                        typologies_style = "\n".join(
-                        [f"<span style='color: blue; font-weight: bold;'>{t}</span>" if t == selected_typology or t == selected_typology2 else f"<span style='color: gray;'>{t}</span>"
-                        for t in typologies]
-                        )
-                    else:
-                        category_style = f"<span style='color:gray;'>{category_name}</span>"
-                        typologies_style = "\n".join([f"<span style='color:gray;'>{t}</span>" for t in typologies])
+                    category_style = (
+                        f"<span style='background-color: {category_color}; border-radius: 5px; font-weight: bold; color: white; padding: 5px;'>{category_name}</span>"
+                        if category_highlight
+                        else f"<span style='color: {category_color};'>{category_name}</span>"
+                    )
+                    typologies_style = "<br>".join(
+                        [
+                            f"<span style='color: {category_color}; font-weight: bold;'>{t}</span>"
+                            if t in typology_highlights
+                            else f"<span style='color: gray;'>{t}</span>"
+                            for t in typologies
+                        ]
+                    )
 
-                    # Render in the grid
+# Render the typologies with line breaks
                     with row[j]:
                         st.markdown(f"<h5>{category_style}</h5>", unsafe_allow_html=True)
-                        st.markdown(f"<p>{typologies_style}</p>", unsafe_allow_html=True)
+                        st.markdown(f"{typologies_style}", unsafe_allow_html=True)
+
+
+
+    #                 typologies_style = "\n".join(
+    #                     [
+    #                         f"<span style='color: blue; font-weight: bold;'>{t}</span>"
+    #                         if t in typology_highlights
+    #                         else f"<span style='color: gray;'>{t}</span>"
+    #                         for t in typologies
+    #                     ]
+    #                 )
+
+    #                 # Render in the grid
+    #                 with row[j]:
+    #                     st.markdown(f"<h5>{category_style}</h5>", unsafe_allow_html=True)
+    #                     st.markdown(f"<p>{typologies_style}</p>", unsafe_allow_html=True)
+    # # st.write(clean)
+    # selected_category = clean["category"]
+    # selected_typology = clean["typology"]
+
+    # if len(clean) > 1:
+    #     selected_category2 = clean[1]["category"]
+    #     selected_typology2 = clean[1]["typology"]
+
+    # col1, col2 = st.columns([2,6])
+
+    # with col1:
+    #     st.write(response_json)
+
+    # with col2:
+    #     categories = json_content["categories"]
+    #     rows = len(categories) // 5 + len(categories) % 2  # Calculate rows for a 5x2 grid
+
+    #     for i in range(rows):
+    #         row = st.columns(5)  
+            
+    #         # Handle two categories per row
+    #         for j in range(5):
+    #             idx = i * 5 + j
+    #             if idx < len(categories):
+    #                 category_data = categories[idx]
+    #                 category_name = category_data["name"]
+    #                 typologies = category_data["typologies"]
+
+    #                 # Highlight logic
+    #                 if category_name == selected_category or category_name == selected_category2:
+    #                     category_style = f"<span style='background-color: blue; color: white; padding: 5px;'>{category_name}</span>"
+    #                     typologies_style = "\n".join(
+    #                     [f"<span style='color: blue; font-weight: bold;'>{t}</span>" if t == selected_typology or t == selected_typology2 else f"<span style='color: gray;'>{t}</span>"
+    #                     for t in typologies]
+    #                     )
+    #                 else:
+    #                     category_style = f"<span style='color:gray;'>{category_name}</span>"
+    #                     typologies_style = "\n".join([f"<span style='color:gray;'>{t}</span>" for t in typologies])
+
+    #                 # Render in the grid
+    #                 with row[j]:
+    #                     st.markdown(f"<h5>{category_style}</h5>", unsafe_allow_html=True)
+    #                     st.markdown(f"<p>{typologies_style}</p>", unsafe_allow_html=True)
 
 # col1, col2 = st.columns([2,9])
 
